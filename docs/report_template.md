@@ -1,6 +1,6 @@
 ---
-title: Project Title
-author: Author list
+title: SEIRD Epidemiological Model
+author: Zoé Jacob & Joanne Gibert
 geometry: margin=2.5cm
 ---
 
@@ -42,5 +42,6 @@ Summarize the approach taken and the answer to the question set out in the probl
 Describe contributions of each student on the team to the project in terms of writing of code and report, or project management.
 
 # References
+
 
 List all references cited in the report in a consistent format. Every reference should have a citation in the text, and every citation in the text should have a corresponding reference.
