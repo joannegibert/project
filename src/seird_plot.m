@@ -40,10 +40,7 @@ clear;
 clc; 
 close all; 
 
-results_dir = "results";
-if ~exist(results_dir, "dir")
-    mkdir(results_dir);
-end
+results_dir = "results"; % defines the results file
 
 % run the compiled C program
 % the C program must generate scenario_1.csv, scenario_2.csv, ... etc.
