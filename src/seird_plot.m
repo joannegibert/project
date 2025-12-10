@@ -40,8 +40,6 @@ clear;
 clc; 
 close all; 
 
-results_dir = "results"; % defines the results file
-
 % run the compiled C program
 % the C program must generate scenario_1.csv, scenario_2.csv, ... etc.
 
@@ -208,7 +206,7 @@ grid on;
 
 %% Save figures 1 to 5 in as a .png
 for i = 1:5
-    saveas(figure(i), fullfile(results_dir, ['figure_' num2str(i) '.png']));
+    saveas(figure(i), fullfile("results", ['figure_' num2str(i) '.png']));
     disp(['Figure ' num2str(i) ' saved as figure_' num2str(i) '.png'] );
 end
 
@@ -216,7 +214,7 @@ end
 disp("Summary of Scenario Outcomes");
 disp(summary);
 
-writetable(summary, fullfile(results_dir, "summary_results.csv"));
+writetable(summary, fullfile("results", "summary_results.csv"));
 fprintf("\nSummary saved as summary_results.csv\n");
 
 %% function: determine epidemic end time
