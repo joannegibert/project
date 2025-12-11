@@ -46,7 +46,7 @@ close all;
 if ispc
     % if Windows
     % the executable must be: seird_model.exe
-    status = system("bin/seird_model.exe");
+    status = system("bin\seird_model.exe");
 else
     % if MacOS or Linux
     % the executable must be: seird_model
