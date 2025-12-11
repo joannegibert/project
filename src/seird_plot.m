@@ -46,7 +46,7 @@ close all;
 if ispc
     % if Windows
     % the executable must be: seird_model.exe
-    status = system("bin\seird_model.exe");
+    status = system("bin/seird_model.exe");
 else
     % if MacOS or Linux
     % the executable must be: seird_model
@@ -57,7 +57,7 @@ end
 % the '*' wildcard matches any characters (e.g. 1, 2, ..., 9)
 files = dir("results/scenario_*.csv");
 num_files = length(files);
-parameters = readtable("parameters.csv"); % read parameters CSV into a table
+parameters = readtable("data/parameters.csv"); % read parameters CSV into a table
 
 %% Create figures for plotting
 figure(1);  
