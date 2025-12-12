@@ -120,7 +120,7 @@ void run_seird_model(struct Params p, const char *filename) {
 int main() {
 
     // Open the input CSV file containing the parameters
-    FILE *csv = fopen("data/parameters.csv", "r"); // r = read mode
+    FILE *csv = fopen("../data/parameters.csv", "r"); // r = read mode
     if (!csv) {
         printf("Error: could not open parameters.csv\n");
         return 1;
@@ -147,7 +147,7 @@ int main() {
 
             // Create a filename like "scenario_1.csv", "scenario_2.csv", ...
             char filename[64];
-            sprintf(filename, "results/scenario_%d.csv", line_count);
+            sprintf(filename, "../results/scenario_%d.csv", line_count);
 
             // Run SEIRD model with parameters from this row
             run_seird_model(p, filename);
