@@ -79,7 +79,7 @@ void seird_step(double *S, double *E, double *I, double *R, double *D, struct Pa
 
 void run_seird_model(struct Params p, const char *filename) {
 
-     // Open the output CSV file
+    // Open the output CSV file
     FILE *f = fopen(filename, "w"); // w = write mode
     
     // ----- INITIAL CONDITIONS -----
