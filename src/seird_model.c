@@ -143,8 +143,8 @@ int main() {
         }
 
         // Extract beta, gamma, mu, N, sigma from the line (as double)
-        if (sscanf(line, "%lf,%lf,%lf,%lf,%lf",
-                   &p.beta, &p.gamma, &p.mu, &p.N, &p.sigma) == 5) {
+        sscanf(line, "%lf,%lf,%lf,%lf,%lf",
+                   &p.beta, &p.gamma, &p.mu, &p.N, &p.sigma)
 
             // Create a filename like "scenario_1.csv", "scenario_2.csv", ...
             char filename[64];
@@ -152,7 +152,6 @@ int main() {
 
             // Run SEIRD model with parameters from this row
             run_seird_model(p, filename);
-        }
 
         line_count++;
     }
