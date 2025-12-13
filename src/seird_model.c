@@ -131,7 +131,7 @@ int main() {
     p.dt = 0.1;         // time step (days)
     p.steps = 20000;    // number of steps (2000 days)
 
-    char line[256];     // Buffer to read a line from the CSV file
+    char line[256];     // Store the content of the CSV file
     int line_count = 0; // keeps track of which line (e.g. which scenario) we are currently reading from the CSV file
 
     // Read the file line by line
