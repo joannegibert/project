@@ -81,10 +81,6 @@ void run_seird_model(struct Params p, const char *filename) {
 
      // Open the output CSV file
     FILE *f = fopen(filename, "w"); // w = write mode
-    if (!f) {
-        printf("Error: could not open %s\n", filename);
-        exit(1);
-    }
     
     // ----- INITIAL CONDITIONS -----
     double I0 = 1; // Start with 1 infected individual
