@@ -226,6 +226,9 @@ fprintf("\nSummary saved as summary_results.csv\n");
 % output:
 %   t_end - first time when E and I stay permanently below threshold
 %           returns 0 if no such time exists
+% Note: This function was initially suggested by an AI assistant to reduce
+% computational complexity, then adapted using the MathWorks documentation
+% of the cumprod function (see https://ch.mathworks.com/help/matlab/ref/double.cumprod.html). 
 
 function t_end = epidemic_end_day(time, E, I)
     threshold = 1;
