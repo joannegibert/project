@@ -48,13 +48,14 @@ struct Params {
 //  --------------------------------------------------------------------------
 
 void seird_step(double *S, double *E, double *I, double *R, double *D, struct Params p) {
-    double dS = -p.beta * (*S) * (*I) / p.N;                  // dS = −β SI/N
-    double dE =  p.beta * (*S) * (*I) / p.N - p.sigma * (*E); // dE = β SI/N −σE
-    double dI =  p.sigma * (*E) - (p.gamma + p.mu) * (*I);    // dI = σE −(γ+μ)I
-    double dR =  p.gamma * (*I);                              // dR = γI
-    double dD =  p.mu * (*I);                                 // dD = μI
+    double dS = -p.beta * (*S) * (*I) / p.N;                  // dS/dt = −β SI/N
+    double dE =  p.beta * (*S) * (*I) / p.N - p.sigma * (*E); // dE/dt = β SI/N −σE
+    double dI =  p.sigma * (*E) - (p.gamma + p.mu) * (*I);    // dI/dt = σE −(γ+μ)I
+    double dR =  p.gamma * (*I);                              // dR/dt = γI
+    double dD =  p.mu * (*I);                                 // dD/dt = μI
 
-    // Euler update over time : X(t+1) ​= X(t) + dX×dt
+    // Euler update over time: X(t + dt) = X(t) + (dX/dt) * dt
+    // here dX variables represent time derivatives dX/dt evaluated at the current state
     *S += dS * p.dt;
     *E += dE * p.dt;
     *I += dI * p.dt;
