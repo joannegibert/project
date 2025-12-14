@@ -113,9 +113,10 @@ For the mathematical formulation and MATLAB implementation, the primary referenc
 The Euler method and its application to epidemic models were based on the following resources:
 
 - Duke SIR module: <https://sites.math.duke.edu/education/ccp/materials/diffcalc/sir/sir3.html>  
-- Course website: <https://stakahama.gitlab.io/sie-eng270/exercise_CFC.html#details>  
+- Course website: <https://stakahama.gitlab.io/sieeng270/exercise_CFC.html#details>  
 - Comparison of Euler and 4th‑order Runge–Kutta methods for epidemiological models:  
 <https://www.researchgate.net/publication/350066021_Comparison_of_Numerical_Simulation_of_Epidemiological_Model_between_Euler_Method_with_4th_Order_Runge_Kutta_Method>
+
 
 
 
