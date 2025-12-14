@@ -118,10 +118,6 @@ int main() {
 
     // Open the input CSV file containing the parameters
     FILE *csv = fopen("../data/parameters.csv", "r"); // r = read mode
-    if (!csv) {
-        printf("Error: could not open parameters.csv\n");
-        return 1;
-    }
 
     struct Params p;
     p.dt = 0.1;         // time step (days)
