@@ -76,7 +76,7 @@ This creates the executable in the `bin/` directory.
 The entire workflow (simulation + visualization) is automated via MATLAB. 
 A shell script named `run.sh` is provided at the project root to launch the full workflow.
 
-From the project root, make the script executable and run:
+From the terminal of the project directory, make the script executable and run:
 
 `chmod u+x run.sh`
 
@@ -116,6 +116,7 @@ The Euler method and its application to epidemic models were based on the follow
 - Course website: <https://stakahama.gitlab.io/sie-eng270/exercise_CFC.html#details>  
 - Comparison of Euler and 4th‑order Runge–Kutta methods for epidemiological models:  
 <https://www.researchgate.net/publication/350066021_Comparison_of_Numerical_Simulation_of_Epidemiological_Model_between_Euler_Method_with_4th_Order_Runge_Kutta_Method>
+
 
 
 
