@@ -65,7 +65,7 @@ This project is designed to run in a standard Unix-like environment (Linux/macOS
 
 ### Build
 
-To compile the C program, open a terminal in the project directory and run:
+To compile the C program (called `seird_model.c`), open a terminal in the project directory and run:
 
 `gcc src/seird_model.c -o bin/seird_model`
 
@@ -73,7 +73,7 @@ This creates the executable in the `bin/` directory.
 
 ### Execute
 
-The entire workflow (simulation + visualization) is automated via MATLAB. 
+The entire workflow (simulation + visualization) is automated via MATLAB in a script called `seird_plot.m`.
 A shell script named `run.sh` is provided at the project directory to launch the full workflow.
 
 From the terminal of the project directory, make the script executable and run:
@@ -116,6 +116,7 @@ The Euler method and its application to epidemic models were based on the follow
 - Course website: <https://stakahama.gitlab.io/sie-eng270/exercise_CFC.html#details>  
 - Comparison of Euler and 4th‑order Runge–Kutta methods for epidemiological models:  
 <https://www.researchgate.net/publication/350066021_Comparison_of_Numerical_Simulation_of_Epidemiological_Model_between_Euler_Method_with_4th_Order_Runge_Kutta_Method>
+
 
 
 
