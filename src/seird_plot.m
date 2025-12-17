@@ -210,10 +210,7 @@ for i = 1:5
     disp(['Figure ' num2str(i) ' saved as figure_' num2str(i) '.png'] );
 end
 
-%% Show and save summary
-disp("Summary of Scenario Outcomes");
-disp(summary);
-
+%% Save summary
 writetable(summary, fullfile("../results", "summary_results.csv"));
 fprintf("\nSummary saved as summary_results.csv\n");
 
