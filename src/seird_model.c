@@ -136,7 +136,7 @@ int main() {
 
         // Extract beta, gamma, mu, N, sigma from the line (as double)
         sscanf(line, "%lf,%lf,%lf,%lf,%lf",
-                   &p.beta, &p.gamma, &p.mu, &p.N, &p.sigma)
+                   &p.beta, &p.gamma, &p.mu, &p.N, &p.sigma);
 
             // Create a filename like "scenario_1.csv", "scenario_2.csv", ...
             char filename[64];
